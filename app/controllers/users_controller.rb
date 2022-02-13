@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def index
     @users = User.all
     if @users
@@ -42,6 +43,7 @@ class UsersController < ApplicationController
       }
     end
   end
+  
   private
   
   def user_params
